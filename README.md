@@ -1,62 +1,34 @@
-🤖 Clínica Medisur Chatbot
-Este proyecto es un Chatbot conversacional desarrollado en Python diseñado para optimizar la atención al paciente y automatizar las consultas informativas de la Clínica Medisur.
+# 🤖 Clínica Medisur Chatbot: Automatización de Atención al Paciente
 
-El chatbot utiliza un motor de procesamiento de lenguaje natural (NLP) para gestionar preguntas frecuentes sobre la clínica y, fundamentalmente, para realizar el seguimiento y confirmación de citas programadas.
+Este proyecto consiste en un Chatbot conversacional desarrollado en **Python**, diseñado para optimizar la comunicación médico-paciente y automatizar la gestión de consultas informativas y confirmación de turnos.
 
-✨ Características Clave y Funcionalidades
-El chatbot ofrece dos pilares de servicio fundamentales para mejorar la experiencia del paciente:
+## 🚀 Descripción del Proyecto
+El chatbot actúa como un asistente virtual capaz de procesar lenguaje natural para gestionar flujos de información institucional y, fundamentalmente, interactuar con bases de datos para realizar el seguimiento y confirmación de citas programadas en tiempo real.
 
-1. Atención al Paciente Automatizada
-Responde consultas comunes sobre la operación de la clínica:
+## ✨ Habilidades Técnicas y Valor Agregado
+Este desarrollo es una prueba de mi capacidad para integrar soluciones de software en entornos empresariales críticos:
 
-Información Institucional: Proporciona datos de contacto, horarios y ubicaciones.
+* **Gestión de Datos y Automatización:** Manipulación de archivos estructurados (`.csv`) y scripts de consulta dinámica en Python para la persistencia de datos.
+* **Lógica de Procesamiento (NLP):** Diseño de flujos de conversación que guían al usuario según su necesidad (información vs. gestión de turnos).
+* **Integración de Documentación:** Sistema de entrega automática de normativas y requisitos (PDF) según el tipo de estudio solicitado.
+* **Seguridad en el Manejo de Información:** Implementación de variables de entorno para proteger credenciales y datos sensibles de configuración.
 
-Indicaciones Generales: Entrega directamente el documento de "Indicaciones Generales para Pacientes" (ej. vestimenta, requisitos de documentación) antes de la visita, tal como se muestra en el archivo ins_pacientes.pdf.
+| Tecnología | Propósito |
+| :--- | :--- |
+| **Python 3.x** | Lenguaje core para la lógica del bot y procesamiento de datos. |
+| **Pandas / CSV** | Gestión de la base de datos de estudios y turnos de pacientes. |
+| **NLP Logic** | Procesamiento de intenciones del usuario para respuestas automáticas. |
+| **Venv / Pip** | Gestión de entornos virtuales y dependencias del proyecto. |
 
-Requisitos de Estudios: Responde sobre la documentación o preparación necesaria para estudios clínicos específicos.
+## 🛠️ Funcionalidades Principales
+1. **Atención Automatizada:** Respuestas instantáneas sobre horarios, ubicación y requisitos de preparación para estudios clínicos.
+2. **Gestión de Turnos:** Consulta dinámica en la base de datos para confirmar día y hora de citas existentes.
+3. **Reducción de Ausentismo:** Sistema de recordatorios automáticos con indicaciones específicas según el estudio programado.
+4. **Entrega de Requisitos:** Provisión directa de documentos de "Indicaciones Generales" para asegurar el cumplimiento de normativas antes de la visita.
 
-2. Gestión y Seguimiento de Turnos (Proceso de Cita)
-Confirmación de Turno: Al iniciar la conversación, el chatbot puede buscar en la base de datos (usando consulta_base.py y estudios_clinica.csv) si el paciente tiene una cita programada.
+## 💻 Instalación y Ejecución
+Para configurar el entorno de desarrollo local:
 
-Recordatorios: Envía recordatorios de la cita con anticipación, disminuyendo la tasa de ausentismo (no-shows).
-
-Información Relevante: Proporciona el día, la hora y las indicaciones específicas relevantes para su estudio o consulta.
-
-🛠️ Tecnologías y Arquitectura
-https://docs.google.com/spreadsheets/d/1JxI_mkegfw7qBXBrF24quO-OkgyhtikHUbuAQ9yVhFc/edit?gid=572199886#gid=572199886
-
-💻 Instalación y Ejecución
-Sigue estos pasos para configurar y ejecutar el chatbot localmente:
-
-Clonar el Repositorio:
-
-Bash
-
-git clone https://docs.github.com/es/repositories/creating-and-managing-repositories/quickstart-for-repositories
-cd clinica-medisur-chatbot
-Crear y Activar Entorno Virtual (Recomendado):
-
-Bash
-
-python -m venv venv
-source venv/bin/activate  # En Linux/macOS
-# .\venv\Scripts\activate  # En Windows
-Instalar Dependencias:
-
-Bash
-
-pip install -r requirements.txt
-Configurar Variables de Entorno: Asegúrate de editar el archivo config.py con las credenciales necesarias (si aplica).
-
-Ejecutar el Bot:
-
-Bash
-
-python bot.py
-🤝 Contribución y Contacto
-¡Tu interés en este proyecto es bienvenido! Si deseas contribuir a mejorar la lógica de conversación, integrar una nueva base de datos o expandir las funcionalidades de citas, siéntete libre de abrir un issue o enviar un pull request.
-
-Este proyecto es una muestra de mis habilidades en automatización de servicios, manejo de datos e integración de Python en soluciones empresariales.
-
-Desarrollado por: Tatiana Ramos 
-Contacto: tatiiramos9@gmail.com  | https://www.linkedin.com/in/tatiana-ramos-gpti/
+1. **Clona el repositorio:**
+   ```bash
+   git clone [https://github.com/TatiiRamos/clinica-medisur-chatbot.git](https://github.com/TatiiRamos/clinica-medisur-chatbot.git)
